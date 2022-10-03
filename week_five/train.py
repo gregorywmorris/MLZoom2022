@@ -31,6 +31,8 @@ output_file = f'model_C={C}.bin'
 #data = 'https://raw.githubusercontent.com/alexeygrigorev/mlbookcamp-code/master/chapter-03-churn-prediction/WA_Fn-UseC_-Telco-Customer-Churn.csv'
 #!wget $data -O data-week-3.csv
 
+print('start')
+
 df = pd.read_csv('data-week-3.csv')
 
 df.columns = df.columns.str.lower().str.replace(' ', '_')
