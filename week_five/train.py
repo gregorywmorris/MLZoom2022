@@ -12,6 +12,8 @@ In the previous session we trained a model for predicting churn and evaluated it
 
 ## Prep and model
 """
+print('start')
+
 import pickle
 import pandas as pd
 import numpy as np
@@ -31,7 +33,6 @@ output_file = f'model_C={C}.bin'
 #data = 'https://raw.githubusercontent.com/alexeygrigorev/mlbookcamp-code/master/chapter-03-churn-prediction/WA_Fn-UseC_-Telco-Customer-Churn.csv'
 #!wget $data -O data-week-3.csv
 
-print('start')
 
 df = pd.read_csv('data-week-3.csv')
 
@@ -90,6 +91,7 @@ def predict(df, dv, model):
     return y_pred
 
 # train
+print('training')
 
 kfold = KFold(n_splits=n_splits, shuffle=True, random_state=1)
 
@@ -110,6 +112,8 @@ for train_idx, val_idx in kfold.split(df_full_train):
 
 print('C=%s %.3f +- %.3f' % (C, np.mean(scores), np.std(scores)))
 
+
+
 scores
 
 dv, model = train(df_full_train, df_full_train.churn.values, C=1.0)
@@ -127,3 +131,4 @@ with open(output_file, 'wb') as f_out:
 #using the with statement We don't need to explicitly call the close() method. 
 #It is done internally.
 
+print('done')

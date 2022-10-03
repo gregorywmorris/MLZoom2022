@@ -1,5 +1,9 @@
 """## Load the model"""
 
+print('start')
+
+import pickle
+
 input_file = 'model_C=1.0.bin' # file location
 
 with open(input_file, 'rb') as f_in: # rb = read bin
@@ -35,5 +39,7 @@ X = dv.transform([customer])
 
 y_pred = model.predict_proba(X)[0, 1]
 
+print(" ")
 print('input:', customer)
+print(" ")
 print('output:', y_pred)
