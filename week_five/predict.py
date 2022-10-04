@@ -1,45 +1,37 @@
 """## Load the model"""
 
-print('start')
+print("start")
 
 import pickle
+from flask import Flask
+from flask import request, jsonify
 
-input_file = 'model_C=1.0.bin' # file location
+model_file = "model_C=1.0.bin" # file location
 
-with open(input_file, 'rb') as f_in: # rb = read bin
+with open(model_file, "rb") as f_in: # rb = read bin
     dv, model = pickle.load(f_in) 
 # dv is needed so you can transform input, otherwise the model will not be able to proccess the imput
 
-model
+app = Flask("churn")
 
-customer = {
-    'gender': 'female',
-    'seniorcitizen': 0,
-    'partner': 'yes',
-    'dependents': 'no',
-    'phoneservice': 'no',
-    'multiplelines': 'no_phone_service',
-    'internetservice': 'dsl',
-    'onlinesecurity': 'no',
-    'onlinebackup': 'yes',
-    'deviceprotection': 'no',
-    'techsupport': 'no',
-    'streamingtv': 'no',
-    'streamingmovies': 'no',
-    'contract': 'month-to-month',
-    'paperlessbilling': 'yes',
-    'paymentmethod': 'electronic_check',
-    'tenure': 1,
-    'monthlycharges': 29.85,
-    'totalcharges': 29.85
-}
-# new customer to test model
 
-X = dv.transform([customer])
+@app.route('/predict', methods=['POST'])
+def predict():
+    customer = request.get_json()
+    
+    # this code should be in it's own production in real life
+    X = dv.transform([customer])  ## apply the one-hot encoding feature to the customer data 
+    y_pred = model.predict_proba(X)[0, 1]
+    churn = y_pred >= 0.5
+    
+    # make sure return value tells the requester what they need to do with the information
+    result = {
+        'churn_probability' : float(y_pred),
+        'churn' : bool(churn)
+        }
+    
+    return jsonify(result)
 
-y_pred = model.predict_proba(X)[0, 1]
 
-print(" ")
-print('input:', customer)
-print(" ")
-print('output:', y_pred)
+if __name__ == "__main__":
+    app.run(debug=True, host="0.0.0.0",port=8080)
