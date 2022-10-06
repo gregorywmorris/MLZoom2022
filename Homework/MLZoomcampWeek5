@@ -1,0 +1,352 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "collapsed_sections": [],
+      "authorship_tag": "ABX9TyNbD48z+7xLn/VOeqkca8HG",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/gregorywmorris/MLZoom2022/blob/main/Homework/MLZoomcampWeek5\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# MLZoomcampWeek5\n",
+        "\n",
+        "##Homework\n",
+        "In this homework, we will use Credit Card Data from [the previous homework](https://github.com/alexeygrigorev/mlbookcamp-code/blob/master/course-zoomcamp/cohorts/2022/04-evaluation/homework.md).\n",
+        "\n",
+        "Note: sometimes your answer doesn't match one of the options exactly. That's fine. Select the option that's closest to your solution."
+      ],
+      "metadata": {
+        "id": "SULFaRCQwIjL"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "%autosave 1\n",
+        "\n",
+        "%load_ext autoreload\n",
+        "%autoreload 2"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 34
+        },
+        "id": "cZHjLb6I2vSV",
+        "outputId": "49edc5ba-e3b4-4b3f-c942-f78733ffa93b"
+      },
+      "execution_count": 1,
+      "outputs": [
+        {
+          "output_type": "display_data",
+          "data": {
+            "application/javascript": [
+              "IPython.notebook.set_autosave_interval(1000)"
+            ]
+          },
+          "metadata": {}
+        },
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Autosaving every 1 seconds\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import pandas as pd\n",
+        "import numpy as np\n",
+        "\n",
+        "import matplotlib.pyplot as plt\n",
+        "from sklearn.model_selection import train_test_split\n",
+        "from sklearn.feature_extraction import DictVectorizer\n",
+        "from sklearn.linear_model import LogisticRegression"
+      ],
+      "metadata": {
+        "id": "CwFsG71F2yL2"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# Question 1"
+      ],
+      "metadata": {
+        "id": "81kqSXGpwWDu"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "* Install Pipenv\n",
+        "* What's the version of pipenv you installed?\n",
+        "* Use `--version` to find out"
+      ],
+      "metadata": {
+        "id": "rdhsCowezK1H"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "x3JyQ4P2zLvW"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "#Question 2\n",
+        "* Use Pipenv to install Scikit-Learn version 1.0.2\n",
+        "* What's the first hash for scikit-learn you get in Pipfile.lock?\n",
+        "\n",
+        "**Note:** you should create an empty folder for homework and do it there."
+      ],
+      "metadata": {
+        "id": "QaqboqESwdfv"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "#Models\n",
+        "We've prepared a dictionary vectorizer and a model.\n",
+        "\n",
+        "They were trained (roughly) using this code:\n",
+        "\n",
+        "```\n",
+        "features = ['reports', 'share', 'expenditure', 'owner']\n",
+        "dicts = df[features].to_dict(orient='records')\n",
+        "\n",
+        "dv = DictVectorizer(sparse=False)\n",
+        "X = dv.fit_transform(dicts)\n",
+        "\n",
+        "model = LogisticRegression(solver='liblinear').fit(X, y)\n",
+        "\n",
+        "```\n",
+        "\n",
+        "\n",
+        "**Note:** You don't need to train the model. This code is just for your reference.\n",
+        "\n",
+        "And then saved with Pickle. Download them:\n",
+        "\n",
+        "* DictVectorizer\n",
+        "* LogisticRegression\n",
+        "\n",
+        "With wget:\n",
+        "\n",
+        "PREFIX=https://raw.githubusercontent.com/alexeygrigorev/mlbookcamp-code/master/course-zoomcamp/cohorts/2022/05-deployment/homework\n",
+        "\n",
+        "wget $PREFIX/model1.bin\n",
+        "\n",
+        "wget $PREFIX/dv.bin"
+      ],
+      "metadata": {
+        "id": "XTpOKKxzwiN1"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "#Question 3\n",
+        "Let's use these models!\n",
+        "\n",
+        "* Write a script for loading these models with pickle\n",
+        "* Score this client:\n",
+        "\n",
+        "`{\"reports\": 0, \"share\": 0.001694, \"expenditure\": 0.12, \"owner\": \"yes\"}`\n",
+        "\n",
+        "What's the probability that this client will get a credit card?\n",
+        "\n",
+        "* 0.162\n",
+        "* 0.391\n",
+        "* 0.601\n",
+        "* 0.993\n",
+        "\n",
+        "If you're getting errors when unpickling the files, check their checksum:\n",
+        "\n",
+        "\n",
+        "```\n",
+        "$ md5sum model1.bin dv.bin\n",
+        "3f57f3ebfdf57a9e1368dcd0f28a4a14  model1.bin\n",
+        "6b7cded86a52af7e81859647fa3a5c2e  dv.bin\n",
+        "```\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "OFR1CzRqw47u"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "#Question 4\n",
+        "Now let's serve this model as a web service\n",
+        "\n",
+        "* Install Flask and gunicorn (or waitress, if you're on Windows)\n",
+        "* Write Flask code for serving the model\n",
+        "* Now score this client using requests:\n",
+        "\n",
+        "```\n",
+        "url = \"YOUR_URL\"\n",
+        "client = {\"reports\": 0, \"share\": 0.245, \"expenditure\": 3.438, \"owner\": \"yes\"}\n",
+        "requests.post(url, json=client).json()\n",
+        "```\n",
+        "\n",
+        "What's the probability that this client will get a credit card?\n",
+        "\n",
+        "* 0.274\n",
+        "* 0.484\n",
+        "* 0.698\n",
+        "* 0.928"
+      ],
+      "metadata": {
+        "id": "WdjG4ttwxQpP"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "#Docker\n",
+        "Install Docker. We will use it for the next two questions.\n",
+        "\n",
+        "For these questions, we prepared a base image: svizor/zoomcamp-model:3.9.12-slim. You'll need to use it (see Question 5 for an example).\n",
+        "\n",
+        "This image is based on python:3.9.12-slim and has a logistic regression model (a different one) as well a dictionary vectorizer inside.\n",
+        "\n",
+        "This is how the Dockerfile for this image looks like:\n",
+        "\n",
+        "```\n",
+        "FROM python:3.9.12-slim\n",
+        "WORKDIR /app\n",
+        "COPY [\"model2.bin\", \"dv.bin\", \"./\"]\n",
+        "```\n",
+        "\n",
+        "We already built it and then pushed it to svizor/zoomcamp-model:3.9.12-slim.\n",
+        "\n",
+        "**Note:** You don't need to build this docker image, it's just for your reference."
+      ],
+      "metadata": {
+        "id": "th0OxH3VxhI3"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "#Question 5\n",
+        "Download the base image svizor/zoomcamp-model:3.9.12-slim. You can easily make it by using docker pull command.\n",
+        "\n",
+        "So what's the size of this base image?\n",
+        "\n",
+        "* 15 Mb\n",
+        "* 125 Mb\n",
+        "* 275 Mb\n",
+        "* 415 Mb\n",
+        "\n",
+        "You can get this information when running docker images - it'll be in the \"SIZE\" column."
+      ],
+      "metadata": {
+        "id": "OHiS1oILxxmG"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "#Dockerfile\n",
+        "Now create your own Dockerfile based on the image we prepared.\n",
+        "\n",
+        "It should start like that:\n",
+        "\n",
+        "```\n",
+        "FROM svizor/zoomcamp-model:3.9.12-slim\n",
+        "# add your stuff here\n",
+        "```\n",
+        "\n",
+        "Now complete it:\n",
+        "\n",
+        "* Install all the dependencies form the Pipenv file\n",
+        "* Copy your Flask script\n",
+        "* Run it with Gunicorn\n",
+        "\n",
+        "After that, you can build your docker image."
+      ],
+      "metadata": {
+        "id": "indW6B3xyAOd"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "#Question 6\n",
+        "Let's run your docker container!\n",
+        "\n",
+        "After running it, score this client once again:\n",
+        "\n",
+        "```\n",
+        "url = \"YOUR_URL\"\n",
+        "client = {\"reports\": 0, \"share\": 0.245, \"expenditure\": 3.438, \"owner\": \"yes\"}\n",
+        "requests.post(url, json=client).json()\n",
+        "```\n",
+        "\n",
+        "\n",
+        "\n",
+        "What's the probability that this client will get a credit card now?\n",
+        "\n",
+        "* 0.289\n",
+        "* 0.502\n",
+        "* 0.769\n",
+        "* 0.972"
+      ],
+      "metadata": {
+        "id": "WWYMuIXzyQWX"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "#Submit the results\n",
+        "Submit your results here: https://forms.gle/jU2we8f9WeLgX3qa6\n",
+        "You can submit your solution multiple times. In this case, only the last submission will be used\n",
+        "If your answer doesn't match options exactly, select the closest one\n",
+        "\n",
+        "##Deadline\n",
+        "The deadline for submitting is 10 October 2022 (Monday), 23:00 CEST (Berlin time).\n",
+        "\n",
+        "After that, the form will be closed."
+      ],
+      "metadata": {
+        "id": "bU4aeLSdyatG"
+      }
+    }
+  ]
+}
