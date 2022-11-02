@@ -1,6 +1,6 @@
 # Midterm Project
 
-`See also notebook.ipynb`
+See also `notebook.ipynb`
 
 ## By the Numbers
 
