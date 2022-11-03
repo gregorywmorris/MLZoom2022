@@ -20,6 +20,8 @@ Addtionally, the money lost to strokes would boost econamies. Assuming cost and 
 
 ## notebook.ipynb
 
+Throughout this notebook you will find links to further understadning of various concepts. Data Science requires a knowleage of the subject matter to make the best descisions, such as exploring new features like diabetes and obesity that can be determined from the existing data.
+
 The notebook has been optimized for Google Colab, there is a link at the top to open in directly in Google Colab without having to download and run locally.
 
 **!pip** 
@@ -28,3 +30,6 @@ Before you run all, run ipip and check for alerts stating the kernal needs to re
 Next, run all. This will ensure you do not miss any cell dependacies. 
 
 **Notebook Index** is your guide to exploring the notebook and also has links to different sections.
+
+### Transform - Exploritory Data Analysis (EDA)
+This section contains the data exploration, cleaining, transforming, and creating. The inital feature importance is done here (and again in the tuning section). The point of feature importance (stroke correlation in this case) is to get an idea what we should expect the models to replicate as high (or low) value features.
