@@ -12,7 +12,7 @@ See also `notebook.ipynb`
 
 ## Optimal Outcomes
 
-**To predict stroke likely patients.**
+**Model Goal:** To predict stroke likely patients.
 
 **Global:** Predicting stroke can provide an opportunity to take corrective actions before a stroke occurs. Most importantly, resulting in fewer deaths and disabilities.
 
