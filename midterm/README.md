@@ -27,6 +27,7 @@ Throughout this notebook you will find links to further understadning of various
 The notebook has been optimized for Google Colab, there is a link at the top to open in directly in Google Colab without having to download and run locally.
 
 **!pip** 
+
 Before you run all, run ipip and check for alerts stating the kernal needs to restart. If you see this alert, just click restart kernal. This is an issue with Google coalb and occurs occasionally. Dataprep will give an error (about a tuple) and is your indicator that this needs to be done. !pip install dask==2022.02.0 is the usual culprit.
 
 Next, run all. This will ensure you do not miss any cell dependacies. 
