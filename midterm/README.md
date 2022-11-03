@@ -8,7 +8,7 @@ See also `notebook.ipynb`
 
 **Global:** Strokes are a global epidemic. They are the second leading cause of death and have increased by 70% between 1990 to 2019, with death from strokes  inceasing by 43% (source). The WHO estimates the anual cost of strokes to be over US$721 billion (source).
 
-**United State"** While strokes have been declining for decades in the US, it still has a large financial burden, amounting to $53 billion anually (source). Currently stroke is the 5th leading cause of death in the US (source).
+**United State:** While strokes have been declining for decades in the US, it still has a large financial burden, amounting to $53 billion anually (source). Currently stroke is the 5th leading cause of death in the US (source).
 
 ## Optimal Outcomes
 
