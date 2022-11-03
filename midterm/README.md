@@ -12,6 +12,8 @@ See also `notebook.ipynb`
 
 ## Optimal Outcomes
 
+**To predict stroke likely patients.**
+
 **Global:** Predicting stroke can provide an opportunity to take corrective actions before a stroke occurs. Most importantly, resulting in fewer deaths and disabilities.
 
 Addtionally, the money lost to strokes would boost econamies. Assuming cost and stroke occurance are linear, if strokes were reduced by just 5%, that would inject $36 billion into world economies.
