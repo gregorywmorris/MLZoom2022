@@ -28,10 +28,10 @@ The notebook has been optimized for Google Colab, there is a link at the top to 
 
 **On Colab:** at the top select Runtime, then Run All. A popup will appear, select Run Anyways. This will ensure you do not miss any cell dependacies. 
 
-Dataprep may fail and give the error: TypeError: Callbacks must be either `Callback` or `tuple`, this means the kernal needs to be restarted, see below.
+Dataprep may fail and give the error: `TypeError: Callbacks must be either Callback or tuple`, this means the kernal needs to be restarted, see below.
 
 **!pip:** 
-Check !pip for alerts stating the kernal needs to restart. If you see this alert, just click Restart Runtime button provided by there error. This is an issue with Google colab and !pip install dask==2022.02.0 is the culprit. Click Yes on the popup and then go ahead and run all again.
+Check !pip for alerts stating the kernal needs to restart. If you see this alert, just click `Restart Runtime` button provided by the error. This is an issue with Google colab and `!pip install dask==2022.02.0` is the culprit. Click Yes on the popup and then go ahead and run all again.
 
 **Notebook Index** is your guide to exploring the notebook and has links to different sections.
 
