@@ -26,12 +26,12 @@ Throughout this notebook you will find links to further understadning of various
 
 The notebook has been optimized for Google Colab, there is a link at the top to open in directly in Google Colab without having to download and run locally.
 
-**!pip** 
-Before you run all, run ipip and check for alerts stating the kernal needs to restart. If you see this alert, just click restart kernal. This is an issue with Google coalb and occurs occasionally. Dataprep will give an error (about a tuple) and is your indicator that this needs to be done. !pip install dask==2022.02.0 is the usual culprit.
+**On Colab:** at the top select Runtime, then Run All. A popup will appear, select Run Anyways. This will ensure you do not miss any cell dependacies. 
 
-Next, run all. This will ensure you do not miss any cell dependacies. 
+Dataprep may fail and give the error: TypeError: Callbacks must be either `Callback` or `tuple`, this means the kernal needs to be restarted, see below.
 
-**Notebook Index** is your guide to exploring the notebook and also has links to different sections.
+**!pip:** 
+Check !pip for alerts stating the kernal needs to restart. If you see this alert, just click Restart Runtime button provided by there error. This is an issue with Google colab and !pip install dask==2022.02.0 is the culprit. Click Yes on the popup and then go ahead and run all again.
 
-### Transform - Exploritory Data Analysis (EDA)
-This section contains the data exploration, cleaining, transforming, and creating. The inital feature importance is done here (and again in the tuning section). The point of feature importance (stroke correlation in this case) is to get an idea what we should expect the models to replicate as high (or low) value features.
+**Notebook Index** is your guide to exploring the notebook and has links to different sections.
+
