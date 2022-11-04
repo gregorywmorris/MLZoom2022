@@ -1,7 +1,5 @@
 # Midterm Project
 
-See also `notebook.ipynb`
-
 ## Problem Statement
 
 ### By the Numbers
