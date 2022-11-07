@@ -18,9 +18,18 @@ Addtionally, the money lost to strokes would boost econamies. Assuming cost and 
 
 **United State:** And $2.65 billion into the US econamy.
 
+## Machine Learning (ML)
+**Machine Learning goal:**
+
+Provide stroke risk prediction so that people may understand their risk rate in a meaningful manner. Predicitions will be Low, Moderate, and High.
+
+**Why Machnine Learning?**
+
+ML is best suited for complex problems that are not answered by simple logic. In healthcare, disease epidemiology is often complex and our understanding changing. This makes diseases, such as stroke, prime candidates for ML.
+
 ## notebook.ipynb
 
-The notebook has been optimized for Google Colab, there is a link at the top to open in directly in Google Colab without having to download and run locally. If you run it locally some data will be off slightly dending on your local machine.
+**The notebook has been optimized for Google Colab**, there is a link at the top to open in directly in Google Colab without having to download and run locally. If you run it locally some data will be off slightly dending on your local machine.
 
 **On Colab:** at the top select Runtime, then Run All. A popup will appear, select Run Anyways. This will ensure you do not miss any cell dependacies. 
 Throughout this notebook you will find links to further understadning of various concepts. Data Science requires a knowleage of the subject matter to make the best descisions, such as exploring new features like diabetes and obesity that can be determined from the existing data.
