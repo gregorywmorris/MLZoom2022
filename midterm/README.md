@@ -29,7 +29,7 @@ ML is best suited for complex problems that are not answered by simple logic. In
 
 ## notebook.ipynb
 
-**The notebook has been optimized for Google Colab**, there is a link at the top to open in directly in Google Colab without having to download and run locally. If you run it locally some data will be off slightly dending on your local machine.
+**The notebook has been optimized for Google Colab**, there is a link at the top to open in directly in Google Colab without having to download and run locally. If you run it locally some data will be off slightly depending on your local machine.
 
 **On Colab:** at the top select Runtime, then Run All. A popup will appear, select Run Anyways. This will ensure you do not miss any cell dependacies. 
 Throughout this notebook you will find links to further understadning of various concepts. Data Science requires a knowleage of the subject matter to make the best descisions, such as exploring new features like diabetes and obesity that can be determined from the existing data.
