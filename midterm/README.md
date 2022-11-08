@@ -1,5 +1,12 @@
 # Midterm Project
 
+* Open `notebook.ipynb` in google Colab (link at top of notebook)
+* Select `Runtime` from top menu, then `Run All`
+* Saved model: `service.py`
+* Dependency and enviroment management: `bentofile.yaml`
+* Containerization: Open `notebook.ipynb`, see section *BentoML* on build instructions.
+* AWS Docker container can be access from link in *Production* section or at http://34.207.77.6:3000/#/Service%20APIs/stroke_prediction__classify 
+
 ## Problem Statement
 
 ### By the Numbers
