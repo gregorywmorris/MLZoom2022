@@ -18,6 +18,19 @@
 * Saved model: `service.py`
 * Dependency and enviroment management: `bentofile.yaml`
 
+## notebook.ipynb
+
+* **The notebook has been optimized for Google Colab**, if you run it locally some data will be off slightly depending on your local machine.
+
+* Throughout this notebook you will find links to further understadning of various concepts. 
+
+* Dataprep may fail (though appears resolved recently) and give the error: `TypeError: Callbacks must be either Callback or tuple`, this means the kernal needs to be restarted, see !pip below.
+
+**!pip:** 
+Check !pip for alerts stating the kernal needs to restart. If you see this alert, just click `Restart Runtime` button provided by the error. This is an issue with Google colab and `!pip install dask` is the culprit. Click Yes on the popup and then go ahead and run all again.
+
+**Notebook Index** is your guide to exploring the notebook and has links to different sections. Alternatley you can expand the hamburger icon on left pane.
+
 ## Problem Statement
 
 ### By the Numbers
@@ -44,17 +57,3 @@ Provide stroke risk prediction so that people may understand their risk rate in 
 **Why Machnine Learning?**
 
 ML is best suited for complex problems that are not answered by simple logic. In healthcare, disease epidemiology is often complex and our understanding changing. This makes diseases, such as stroke, prime candidates for ML.
-
-## notebook.ipynb
-
-* **The notebook has been optimized for Google Colab**, if you run it locally some data will be off slightly depending on your local machine.
-
-* Throughout this notebook you will find links to further understadning of various concepts. 
-
-* Dataprep may fail (though appears resolved recently) and give the error: `TypeError: Callbacks must be either Callback or tuple`, this means the kernal needs to be restarted, see !pip below.
-
-**!pip:** 
-Check !pip for alerts stating the kernal needs to restart. If you see this alert, just click `Restart Runtime` button provided by the error. This is an issue with Google colab and `!pip install dask` is the culprit. Click Yes on the popup and then go ahead and run all again.
-
-**Notebook Index** is your guide to exploring the notebook and has links to different sections. Alternatley you can expand the hamburger icon on left pane.
-
