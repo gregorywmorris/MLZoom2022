@@ -1,9 +1,10 @@
 # Stroke Prediction Project
 
 ## Instructions
-* Open `notebook.ipynb` in google Colab (link at top of notebook) recommended.
+* To review: select `notebook.ipynb` in respository and scroll.
+* To run: Open `notebook.ipynb` in google Colab (link at top of notebook) recommended.
   * The notebook can be downloaded and run on a local Jupyter instance but it is optimized for Google Colab for review purposes.  
-* Select `Runtime` from top menu, then `Run All`.
+  * Select `Runtime` from top menu, then `Run All`.
   * A popup will appear, select `Run Anyways`. 
 * Containerization: In `notebook.ipynb`, see section section *Deployment, then subsection *BentoML* on build instructions.
   * To build a bento instance for live test, notebook must be run on a local Jupyter instance.
