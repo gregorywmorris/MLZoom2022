@@ -4,6 +4,7 @@
 * Open `notebook.ipynb` in google Colab (link at top of notebook) recommended.
   * The notebook can be downloaded and run on a local Jupyter instance but it is optimized for Google Colab for review purposes.  
 * Select `Runtime` from top menu, then `Run All`.
+  * A popup will appear, select `Run Anyways`. 
 * Containerization: In `notebook.ipynb`, see section section *Deployment, then subsection *BentoML* on build instructions.
   * To build a bento instance for live test, notebook must be run on a local Jupyter instance.
   * Script creation is done in notebook with use of [magic code](https://ipython.readthedocs.io/en/stable/interactive/magics.html) to create files in notebook directory.
@@ -23,7 +24,7 @@
 
 **Global:** Strokes are a global epidemic. They are the second leading cause of death and have increased by 70% between 1990 to 2019, with death from strokes  inceasing by 43% (source). The WHO estimates the anual cost of strokes to be over US$721 billion (source).
 
-**United State:** While strokes have been declining for decades in the US, it still has a large financial burden, amounting to $53 billion anually (source). Currently stroke is the 5th leading cause of death in the US (source).
+**United State:** While strokes have been declining for decades in the US, it still has a large financial burden, amounting to $53 billion anually (source). Currently stroke is the 5th leading cause of death in the US.
 
 ## Optimal Outcomes
 
@@ -46,15 +47,14 @@ ML is best suited for complex problems that are not answered by simple logic. In
 
 ## notebook.ipynb
 
-**The notebook has been optimized for Google Colab**, there is a link at the top to open in directly in Google Colab without having to download and run locally. If you run it locally some data will be off slightly depending on your local machine.
+* **The notebook has been optimized for Google Colab**, if you run it locally some data will be off slightly depending on your local machine.
 
-**On Colab:** at the top select Runtime, then Run All. A popup will appear, select Run Anyways. This will ensure you do not miss any cell dependacies. 
-Throughout this notebook you will find links to further understadning of various concepts. 
+* Throughout this notebook you will find links to further understadning of various concepts. 
 
-Dataprep may fail (though appears resolved recently) and give the error: `TypeError: Callbacks must be either Callback or tuple`, this means the kernal needs to be restarted, see below.
+* Dataprep may fail (though appears resolved recently) and give the error: `TypeError: Callbacks must be either Callback or tuple`, this means the kernal needs to be restarted, see !pip below.
 
 **!pip:** 
-Check !pip for alerts stating the kernal needs to restart. If you see this alert, just click `Restart Runtime` button provided by the error. This is an issue with Google colab and `!pip install dask is the culprit. Click Yes on the popup and then go ahead and run all again.
+Check !pip for alerts stating the kernal needs to restart. If you see this alert, just click `Restart Runtime` button provided by the error. This is an issue with Google colab and `!pip install dask` is the culprit. Click Yes on the popup and then go ahead and run all again.
 
-**Notebook Index** is your guide to exploring the notebook and has links to different sections.
+**Notebook Index** is your guide to exploring the notebook and has links to different sections. Alternatley you can expand the hamburger icon on left pane.
 
