@@ -15,7 +15,8 @@
 **Files**
 * Notebook: `notebook.ipynb`
 * Data: `healthcare-dataset-stroke-data.csv`
-* Saved model: `service.py`
+* ML script: `service.py`
+  * Note: Model is saved locally via bentoml 
 * Dependency and enviroment management: `bentofile.yaml`
 
 ## notebook.ipynb
