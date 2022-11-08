@@ -22,13 +22,13 @@
 
 * **The notebook has been optimized for Google Colab**
 
-* Throughout this notebook you will find links to further understadning of various concepts. 
+* Throughout this notebook you will find links to further understading or clarification of various concepts. 
 
 * Dataprep may fail (though appears resolved recently) and give the error: `TypeError: Callbacks must be either Callback or tuple`, this means the kernal needs to be restarted, see !pip below.
 
 * **!pip:** Check !pip for alerts stating the kernal needs to restart. If you see this alert, just click `Restart Runtime` button provided by the error. This is an issue with Google colab and `!pip install dask` is the culprit. Click Yes on the popup and then go ahead and run all again.
 
-* **Notebook Index** is your guide to exploring the notebook and has links to different sections. Alternatley you can expand the hamburger icon on left pane.
+* **Notebook Index** is your guide to exploring the notebook and has links to different sections. Alternately, you can expand the hamburger icon on left pane.
 
 ## Problem Statement
 
