@@ -4,11 +4,12 @@
 * Open `notebook.ipynb` in google Colab (link at top of notebook) recommended.
   * The notebook can be downloaded and run on a local Jupyter instance but it is optimized for Google Colab for review purposes.  
 * Select `Runtime` from top menu, then `Run All`
-* Containerization: Open `notebook.ipynb`, see section *BentoML* on build instructions.
+* Containerization: In `notebook.ipynb`, see section section *Deployment, then subsection *BentoML* on build instructions.
   * To build a bento instance for live test, notebook must be run on a local Jupyter instance.
   * Script creation is done in notebook with use of [magic code](https://ipython.readthedocs.io/en/stable/interactive/magics.html) to create files in notebook directory.
-* Cloud deployment: AWS ECS can be access from link in *Production* section 
+* Cloud deployment: AWS ECS can be access from `notebook.ipynb` link in section *Deployment* then subsection *Production*
   * or click [here](http://34.207.77.6:3000/#/Service%20APIs/stroke_prediction__classify)
+  * Subsection *Production* contains template and example patient for testing.
 
 **Files**
 * Notebook: `notebook.ipynb`
