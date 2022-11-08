@@ -26,7 +26,7 @@
 
 **United State:** While strokes have been declining for decades in the US, it still has a large financial burden, amounting to $53 billion anually (source). Currently stroke is the 5th leading cause of death in the US.
 
-## Optimal Outcomes
+### Optimal Outcomes
 
 **Model Goal:** To predict stroke likely patients.
 
@@ -36,7 +36,7 @@ Addtionally, the money lost to strokes would boost econamies. Assuming cost and 
 
 **United State:** And $2.65 billion into the US econamy.
 
-## Machine Learning (ML)
+### Machine Learning (ML)
 **Machine Learning goal:**
 
 Provide stroke risk prediction so that people may understand their risk rate in a meaningful manner. Predicitions will be Low, Moderate, and High.
