@@ -20,7 +20,7 @@
 
 ## notebook.ipynb
 
-* **The notebook has been optimized for Google Colab**, if you run it locally some output will be off slightly depending on your local machine.
+* **The notebook has been optimized for Google Colab**
 
 * Throughout this notebook you will find links to further understadning of various concepts. 
 
