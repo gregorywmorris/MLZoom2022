@@ -108,6 +108,7 @@ ML is best suited for complex problems that are not answered by simple logic. In
 }
 
 **Example Patient**
+
 {
 
 "gender": "string",
