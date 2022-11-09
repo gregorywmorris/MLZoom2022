@@ -34,6 +34,18 @@ ML is best suited for complex problems that are not answered by simple logic. In
   * In Colab select `Runtime` from top menu, then `Run All`.
   * A popup will appear, select `Run Anyways`. 
   
+### notebook.ipynb
+
+* **The notebook has been optimized for Google Colab**
+
+* Throughout this notebook you will find links to further understading or clarification of various concepts. 
+
+* Dataprep may fail (though appears resolved recently) and give the error: `TypeError: Callbacks must be either Callback or tuple`, this means the kernal needs to be restarted, see !pip below.
+
+* **!pip:** Check !pip for alerts stating the kernal needs to restart. If you see this alert, just click `Restart Runtime` button provided by the error. This is an issue with Google colab and `!pip install dask` is the culprit. Click Yes on the popup and then go ahead and run all again.
+
+* **Notebook Index** is your guide to exploring the notebook and has links to different sections. Alternately, you can expand the hamburger icon on left pane.
+  
 ### Containerization: 
   * In `notebook.ipynb`, see section section *Deployment*, then subsection *BentoML* on build instructions.
   * To build a bento instance for live test, notebook must be run on a local Jupyter instance.
@@ -59,9 +71,10 @@ ML is best suited for complex problems that are not answered by simple logic. In
     * Select `Tasks` and then `Run new Task`
     * Follow prompts and select the created task.
       * select `Run Task`
-  6. AWS ECS can be access from `notebook.ipynb` link in section *Deployment* then subsection *Production App Access*.
-    * or [here](https://github.com/gregorywmorris/MLZoom2022/blob/main/midterm/README.md#production-app-access).
-  * Notebook subsection *Production App Access* contains template and example patient for testing the API.
+  6. AWS ECS can be access from `notebook.ipynb` link in 
+    * Section *Deployment* then subsection *Production App Access*.
+    * Or [here](https://github.com/gregorywmorris/MLZoom2022/blob/main/midterm/README.md#production-app-access).
+    * Notebook subsection *Production App Access* contains template and example patient for testing the API.
 
 **Files**
 * Notebook: `notebook.ipynb`
@@ -70,17 +83,6 @@ ML is best suited for complex problems that are not answered by simple logic. In
   * Note: Model is saved locally via bentoml 
 * Dependency and enviroment management: `bentofile.yaml`
 
-## notebook.ipynb
-
-* **The notebook has been optimized for Google Colab**
-
-* Throughout this notebook you will find links to further understading or clarification of various concepts. 
-
-* Dataprep may fail (though appears resolved recently) and give the error: `TypeError: Callbacks must be either Callback or tuple`, this means the kernal needs to be restarted, see !pip below.
-
-* **!pip:** Check !pip for alerts stating the kernal needs to restart. If you see this alert, just click `Restart Runtime` button provided by the error. This is an issue with Google colab and `!pip install dask` is the culprit. Click Yes on the popup and then go ahead and run all again.
-
-* **Notebook Index** is your guide to exploring the notebook and has links to different sections. Alternately, you can expand the hamburger icon on left pane.
 
 ## Production App Access
 
