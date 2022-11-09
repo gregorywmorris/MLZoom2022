@@ -31,13 +31,34 @@ ML is best suited for complex problems that are not answered by simple logic. In
 * For quick review: select `notebook.ipynb` in respository and scroll.
 * To run: Open `notebook.ipynb` in google Colab (link at top of notebook) recommended.
   * The notebook can be downloaded and run on a local Jupyter instance but it is optimized for Google Colab for review purposes.  
-  * Select `Runtime` from top menu, then `Run All`.
+  * In Colab select `Runtime` from top menu, then `Run All`.
   * A popup will appear, select `Run Anyways`. 
-* Containerization: In `notebook.ipynb`, see section section *Deployment*, then subsection *BentoML* on build instructions.
+  
+### Containerization: 
+  * In `notebook.ipynb`, see section section *Deployment*, then subsection *BentoML* on build instructions.
   * To build a bento instance for live test, notebook must be run on a local Jupyter instance.
   * Script creation is done in notebook with use of [magic code](https://ipython.readthedocs.io/en/stable/interactive/magics.html) to create files in notebook directory.
-* Cloud deployment: AWS ECS can be access from `notebook.ipynb` link in section *Deployment* then subsection *Production App Access*.
-  * or [here](https://github.com/gregorywmorris/MLZoom2022/blob/main/midterm/README.md#production-app-access).
+  * Bentoml commands are listed but not run from the notebook.
+  
+### Cloud deployment: 
+  1. Loginto AWS Console 
+  2. Go to Elastic Container Registry. Select `Create Registry`.
+  3. In registry select `View push commands`
+   * On local Windows PC use GitBash and follow macOS/Linux commands.NOTE: Must have AWS CLI installed.
+   * `AWS console`, login via the prompts.
+   * `aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin [censored].dkr.ecr.us-east-1.amazonaws.com`
+   * Skip this command, docker build done though bentoml -> `docker build -t stroke_prediction .` 
+   * `docker tag stroke_prediction:latest [censored].dkr.ecr.us-east-1.amazonaws.com/stroke_prediction:latest`
+   *  `docker push [censored].dkr.ecr.us-east-1.amazonaws.com/stroke_prediction:latest
+  4. Move to Elastic Container Service, select `create cluster`. 
+   * Follow the prompts to create cluster
+   * Select the cluster
+   * Select `Tasks` and then `Run new Task`
+   * 
+
+  
+  * AWS ECS can be access from `notebook.ipynb` link in section *Deployment* then subsection *Production App Access*.
+    * or [here](https://github.com/gregorywmorris/MLZoom2022/blob/main/midterm/README.md#production-app-access).
   * Subsection *Production App Access* contains template and example patient for testing the API.
 
 **Files**
