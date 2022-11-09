@@ -53,7 +53,7 @@ Addtionally, the money lost to strokes would boost econamies. Assuming cost and 
 ### Machine Learning (ML)
 **Machine Learning goal:**
 
-Provide stroke risk prediction so that people may understand their risk rate in a meaningful manner. Predicitions will be Low, Moderate, and High.
+Provide stroke risk prediction so that people may understand their risk rate in a meaningful manner. Predicitions will be Low, Moderate, and High. These values where chosen because they would provide better context to the average person rahter than a risk percentage. For example a risk of 15% may not be clear if it is a need for concern or not. 
 
 **Why Machnine Learning?**
 
