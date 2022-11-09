@@ -41,25 +41,27 @@ ML is best suited for complex problems that are not answered by simple logic. In
   * Bentoml commands are listed but not run from the notebook.
   
 ### Cloud deployment: 
-  1. Loginto AWS Console 
+  1. Login to AWS Console 
   2. Go to Elastic Container Registry. Select `Create Registry`.
   3. In registry select `View push commands`
-   * On local Windows PC use GitBash and follow macOS/Linux commands.NOTE: Must have AWS CLI installed.
-   * `AWS console`, login via the prompts.
-   * `aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin [censored].dkr.ecr.us-east-1.amazonaws.com`
-   * Skip this command, docker build done though bentoml -> `docker build -t stroke_prediction .` 
-   * `docker tag stroke_prediction:latest [censored].dkr.ecr.us-east-1.amazonaws.com/stroke_prediction:latest`
-   *  `docker push [censored].dkr.ecr.us-east-1.amazonaws.com/stroke_prediction:latest
-  4. Move to Elastic Container Service, select `create cluster`. 
-   * Follow the prompts to create cluster
-   * Select the cluster
-   * Select `Tasks` and then `Run new Task`
-   * 
-
-  
-  * AWS ECS can be access from `notebook.ipynb` link in section *Deployment* then subsection *Production App Access*.
+    * On local Windows PC use GitBash and follow macOS/Linux commands.NOTE: Must have AWS CLI installed.
+    * `AWS console`, login via the prompts.
+    * `aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin [censored].dkr.ecr.us-east-1.amazonaws.com`
+    * Skip this command, docker build done though bentoml -> `docker build -t stroke_prediction .` 
+    * `docker tag stroke_prediction:latest [censored].dkr.ecr.us-east-1.amazonaws.com/stroke_prediction:latest`
+    *  `docker push [censored].dkr.ecr.us-east-1.amazonaws.com/stroke_prediction:latest
+  4. Move to Elastic Container Service, then Select `Create new Task Definition`.
+    * Follow prompts, be sure to sleect image uploaded to the registry.
+    * Then select `Create`
+  5. Select `Clusters` on the left pane, then Select `create cluster`. 
+    * Follow the prompts to create cluster
+    * Select the cluster
+    * Select `Tasks` and then `Run new Task`
+    * Follow prompts and select the created task.
+      * select `Run Task`
+  6. AWS ECS can be access from `notebook.ipynb` link in section *Deployment* then subsection *Production App Access*.
     * or [here](https://github.com/gregorywmorris/MLZoom2022/blob/main/midterm/README.md#production-app-access).
-  * Subsection *Production App Access* contains template and example patient for testing the API.
+  * Notebook subsection *Production App Access* contains template and example patient for testing the API.
 
 **Files**
 * Notebook: `notebook.ipynb`
