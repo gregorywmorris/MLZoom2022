@@ -63,18 +63,18 @@ ML is best suited for complex problems that are not answered by simple logic. In
    * `docker tag stroke_prediction:latest [censored].dkr.ecr.us-east-1.amazonaws.com/stroke_prediction:latest`
    *  `docker push [censored].dkr.ecr.us-east-1.amazonaws.com/stroke_prediction:latest
   4. Move to Elastic Container Service, then Select `Create new Task Definition`.
-    * Follow prompts, be sure to sleect image uploaded to the registry.
-    * Then select `Create`
+   * Follow prompts, be sure to sleect image uploaded to the registry.
+   * Then select `Create`
   5. Select `Clusters` on the left pane, then Select `create cluster`. 
-    * Follow the prompts to create cluster
-    * Select the cluster
-    * Select `Tasks` and then `Run new Task`
-    * Follow prompts and select the created task.
+   * Follow the prompts to create cluster
+   * Select the cluster
+   * Select `Tasks` and then `Run new Task`
+   * Follow prompts and select the created task.
       * select `Run Task`
   6. AWS ECS can be access from `notebook.ipynb` link in 
-    * Section *Deployment* then subsection *Production App Access*.
-    * Or [here](https://github.com/gregorywmorris/MLZoom2022/blob/main/midterm/README.md#production-app-access).
-    * Notebook subsection *Production App Access* contains template and example patient for testing the API.
+   * Section *Deployment* then subsection *Production App Access*.
+   * Or [here](https://github.com/gregorywmorris/MLZoom2022/blob/main/midterm/README.md#production-app-access).
+   * Notebook subsection *Production App Access* contains template and example patient for testing the API.
 
 **Files**
 * Notebook: `notebook.ipynb`
