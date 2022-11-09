@@ -56,12 +56,12 @@ ML is best suited for complex problems that are not answered by simple logic. In
   1. Login to AWS Console 
   2. Go to Elastic Container Registry. Select `Create Registry`.
   3. In registry select `View push commands`
-    * On local Windows PC use GitBash and follow macOS/Linux commands.NOTE: Must have AWS CLI installed.
-    * `AWS console`, login via the prompts.
-    * `aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin [censored].dkr.ecr.us-east-1.amazonaws.com`
-    * Skip this command, docker build done though bentoml -> `docker build -t stroke_prediction .` 
-    * `docker tag stroke_prediction:latest [censored].dkr.ecr.us-east-1.amazonaws.com/stroke_prediction:latest`
-    *  `docker push [censored].dkr.ecr.us-east-1.amazonaws.com/stroke_prediction:latest
+   * On local Windows PC use GitBash and follow macOS/Linux commands.NOTE: Must have AWS CLI installed.
+   * `AWS console`, login via the prompts.
+   * `aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin [censored].dkr.ecr.us-east-1.amazonaws.com`
+   * Skip this command, docker build done though bentoml -> `docker build -t stroke_prediction .` 
+   * `docker tag stroke_prediction:latest [censored].dkr.ecr.us-east-1.amazonaws.com/stroke_prediction:latest`
+   *  `docker push [censored].dkr.ecr.us-east-1.amazonaws.com/stroke_prediction:latest
   4. Move to Elastic Container Service, then Select `Create new Task Definition`.
     * Follow prompts, be sure to sleect image uploaded to the registry.
     * Then select `Create`
