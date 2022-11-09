@@ -10,7 +10,7 @@
   * To build a bento instance for live test, notebook must be run on a local Jupyter instance.
   * Script creation is done in notebook with use of [magic code](https://ipython.readthedocs.io/en/stable/interactive/magics.html) to create files in notebook directory.
 * Cloud deployment: AWS ECS can be access from `notebook.ipynb` link in section *Deployment* then subsection *Production App Access*.
-  * or click [here](http://34.207.77.6:3000/#/Service%20APIs/stroke_prediction__classify).
+  * or click [here]([http://34.207.77.6:3000/#/Service%20APIs/stroke_prediction__classify](https://github.com/gregorywmorris/MLZoom2022/tree/main/midterm#production-app-access).
   * Subsection *Production App Access* contains template and example patient for testing the API.
 
 **Files**
@@ -59,7 +59,8 @@ Provide stroke risk prediction so that people may understand their risk rate in 
 
 ML is best suited for complex problems that are not answered by simple logic. In healthcare, disease epidemiology is often complex and our understanding changing. This makes diseases, such as stroke, prime candidates for ML.
 
-# Production App Access
+## Production App Access
+
 **Instructions***
 To access production site go here: http://34.207.77.6:3000/#/Service%20APIs/stroke_prediction__classify
 
@@ -69,11 +70,12 @@ Select Try it out in the POST section.
 In Request body enter patient information based on template or paste in example patient. Select Execute.
 ![image](https://user-images.githubusercontent.com/83911983/200917598-1bb98d39-258f-46c5-8039-934e4840c4ca.png)
 
-Template
+**Template**
 All values must be filled in.
 Strings must be within double quotes " "
 Float values must be in format 0.0
 Capitalization for values must be followed
+
 {
 
 "gender": "Male" or "Female",
@@ -102,7 +104,7 @@ Capitalization for values must be followed
 
 }
 
-Example Patient
+**Example Patient**
 {
 
 "gender": "string",
