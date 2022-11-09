@@ -1,7 +1,7 @@
 # Stroke Prediction Project
 
 ## Instructions
-* To review: select `notebook.ipynb` in respository and scroll.
+* For quick review: select `notebook.ipynb` in respository and scroll.
 * To run: Open `notebook.ipynb` in google Colab (link at top of notebook) recommended.
   * The notebook can be downloaded and run on a local Jupyter instance but it is optimized for Google Colab for review purposes.  
   * Select `Runtime` from top menu, then `Run All`.
