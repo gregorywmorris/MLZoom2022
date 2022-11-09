@@ -61,7 +61,7 @@ ML is best suited for complex problems that are not answered by simple logic. In
    * `aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin [censored].dkr.ecr.us-east-1.amazonaws.com`
    * Skip this command, docker build done though bentoml -> `docker build -t stroke_prediction .` 
    * `docker tag stroke_prediction:latest [censored].dkr.ecr.us-east-1.amazonaws.com/stroke_prediction:latest`
-   *  `docker push [censored].dkr.ecr.us-east-1.amazonaws.com/stroke_prediction:latest
+   *  `docker push [censored].dkr.ecr.us-east-1.amazonaws.com/stroke_prediction:latest`
   4. Move to Elastic Container Service, then Select `Create new Task Definition`.
    * Follow prompts, be sure to sleect image uploaded to the registry.
    * Then select `Create`
