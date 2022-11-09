@@ -61,13 +61,16 @@ ML is best suited for complex problems that are not answered by simple logic. In
 
 ## Production App Access
 
-**Instructions***
-To access production site go here: http://34.207.77.6:3000/#/Service%20APIs/stroke_prediction__classify
+**Instructions**
 
-Select Try it out in the POST section.
+1.) To access production site go here: http://34.207.77.6:3000/#/Service%20APIs/stroke_prediction__classify
+
+2.) Select Try it out in the POST section.
+
 ![image](https://user-images.githubusercontent.com/83911983/200917321-a0adb65c-1972-48b0-a90b-36bb2e35ad7d.png)
 
-In Request body enter patient information based on template or paste in example patient. Select Execute.
+3.) In Request body enter patient information based on template or paste in example patient. Select Execute.
+
 ![image](https://user-images.githubusercontent.com/83911983/200917598-1bb98d39-258f-46c5-8039-934e4840c4ca.png)
 
 **Template**
