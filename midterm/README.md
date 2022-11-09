@@ -74,10 +74,10 @@ ML is best suited for complex problems that are not answered by simple logic. In
 ![image](https://user-images.githubusercontent.com/83911983/200917598-1bb98d39-258f-46c5-8039-934e4840c4ca.png)
 
 **Template**
-All values must be filled in.
-Strings must be within double quotes " "
-Float values must be in format 0.0
-Capitalization for values must be followed
+* All values must be filled in.
+* Strings must be within double quotes " "
+* Float values must be in format 0.0
+* Capitalization for values must be followed
 
 {
 
@@ -136,12 +136,12 @@ Capitalization for values must be followed
 
 }
 
-Scroll down to Server response and see response in Response body.
+4.) Scroll down to Server response and see response in Response body.
 Possible Responses:
 
-"Stroke Risk: HIGH"
-"Stroke Risk: MODERATE"
-"Stroke Risk: LOW"
+* "Stroke Risk: HIGH"
+* "Stroke Risk: MODERATE"
+* "Stroke Risk: LOW"
 
 ![image](https://user-images.githubusercontent.com/83911983/200917718-c85185b6-d5ae-4f57-90e4-9552ef1a3837.png)
 
