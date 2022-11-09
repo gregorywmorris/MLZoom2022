@@ -58,3 +58,86 @@ Provide stroke risk prediction so that people may understand their risk rate in 
 **Why Machnine Learning?**
 
 ML is best suited for complex problems that are not answered by simple logic. In healthcare, disease epidemiology is often complex and our understanding changing. This makes diseases, such as stroke, prime candidates for ML.
+
+# Production App Access
+**Instructions***
+To access production site go here: http://34.207.77.6:3000/#/Service%20APIs/stroke_prediction__classify
+
+Select Try it out in the POST section.
+![image](https://user-images.githubusercontent.com/83911983/200917321-a0adb65c-1972-48b0-a90b-36bb2e35ad7d.png)
+
+In Request body enter patient information based on template or paste in example patient. Select Execute.
+![image](https://user-images.githubusercontent.com/83911983/200917598-1bb98d39-258f-46c5-8039-934e4840c4ca.png)
+
+Template
+All values must be filled in.
+Strings must be within double quotes " "
+Float values must be in format 0.0
+Capitalization for values must be followed
+{
+
+"gender": "Male" or "Female",
+
+"age": float,
+
+"hypertension": 1 or 0,
+
+"heart_disease": 1 or 0,
+
+"ever_married": 1 or 0,
+
+"work_type": "Private" or "Self-employed" or "children" or "Govt_job" or "Never_worked",
+
+"residence_type": "Urban" or "Rural",
+
+"avg_glucose_level": float,
+
+"bmi": float,
+
+"smoking_status": "smokes" or "never smoked" or "Unkown" or "formerly smoked",
+
+"obese": 1 or 0,
+
+"clearly_diabetes": 1 or 0
+
+}
+
+Example Patient
+{
+
+"gender": "string",
+
+"age": 69.0,
+
+"hypertension": 0,
+
+"heart_disease": 1,
+
+"ever_married": 1,
+
+"work_type": "self_employed",
+
+"residence_type": "Urban",
+
+"avg_glucose_level": 195.23,
+
+"bmi": 28.3,
+
+"smoking_status": "smokes",
+
+"obese": 0,
+
+"clearly_diabetes": 1
+
+}
+
+Scroll down to Server response and see response in Response body.
+Possible Responses:
+
+"Stroke Risk: HIGH"
+"Stroke Risk: MODERATE"
+"Stroke Risk: LOW"
+
+![image](https://user-images.githubusercontent.com/83911983/200917718-c85185b6-d5ae-4f57-90e4-9552ef1a3837.png)
+
+
