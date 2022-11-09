@@ -10,7 +10,7 @@
   * To build a bento instance for live test, notebook must be run on a local Jupyter instance.
   * Script creation is done in notebook with use of [magic code](https://ipython.readthedocs.io/en/stable/interactive/magics.html) to create files in notebook directory.
 * Cloud deployment: AWS ECS can be access from `notebook.ipynb` link in section *Deployment* then subsection *Production App Access*.
-  * or [here](http://34.207.77.6:3000/#/Service%20APIs/stroke_prediction__classify](https://github.com/gregorywmorris/MLZoom2022/tree/main/midterm#production-app-access).
+  * or [here](https://github.com/gregorywmorris/MLZoom2022/blob/main/midterm/README.md#production-app-access).
   * Subsection *Production App Access* contains template and example patient for testing the API.
 
 **Files**
