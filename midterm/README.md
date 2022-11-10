@@ -82,6 +82,7 @@ ML is best suited for complex problems that are not answered by simple logic. In
 * ML script: `service.py`
   * Note: Model is saved locally via bentoml 
 * Dependency and enviroment management: `bentofile.yaml`
+* `training.py`
 
 
 ## Production App Access
