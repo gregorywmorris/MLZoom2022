@@ -28,6 +28,7 @@ Provide stroke risk prediction so that people may understand their risk rate in 
 ML is best suited for complex problems that are not answered by simple logic. In healthcare, disease epidemiology is often complex and our understanding changing. This makes diseases, such as stroke, prime candidates for ML.
 
 ## Instructions
+* To access and test API go [here](https://github.com/gregorywmorris/MLZoom2022/tree/main/midterm#production-app-access)
 * For quick review: select `notebook.ipynb` in respository and scroll.
 * To run: Open `notebook.ipynb` in google Colab (link at top of notebook) recommended.
   * The notebook can be downloaded and run on a local Jupyter instance but it is optimized for Google Colab for review purposes.  
