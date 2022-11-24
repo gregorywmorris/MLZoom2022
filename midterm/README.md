@@ -93,7 +93,7 @@ ML is best suited for complex problems that are not answered by simple logic. In
 
 **Instructions**
 
-1.) To access production site go here: http://34.207.77.6:3000/#/Service%20APIs/stroke_prediction__classify
+1.) To access production site go here: http://http://54.209.45.24:3000/
 
 2.) Select Try it out in the POST section.
 
