@@ -125,7 +125,7 @@ Number of Features | 12
 
 #### Descriptive Statistics
 <!-- width: full -->
-<!-- info: Provide basic descriptive statistics for each field.
+<!-- info: Provide basic descriptive statistics for each field. --->
 
  
 Statistic | age | hypertension| heart_disease | avg_glucose_level | bmi |stroke
