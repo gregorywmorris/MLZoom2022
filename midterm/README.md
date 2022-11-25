@@ -8,7 +8,7 @@
 * ML script: `service.py`
   * Note: Model is saved locally via bentoml 
 * Dependency and enviroment management: `bentofile.yaml`
-* MOdel Creation Script: `training.py`
+* Model Creation Script: `training.py`
 
 ## Problem Statement
 
