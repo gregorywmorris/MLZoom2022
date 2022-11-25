@@ -5,6 +5,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LogisticRegression
 from sklearn.feature_extraction import DictVectorizer
 from imblearn.over_sampling import SMOTE
+import bentoml
 
 df = pd.read_csv('healthcare-dataset-stroke-data.csv') # .csv must be in same directory
 
@@ -44,3 +45,10 @@ len(x_train), len(y_train)
 log_model = LogisticRegression(max_iter=1000, random_state=1,C=100,penalty='l2',solver='lbfgs')
 
 log_model.fit(x_train, y_train)
+
+bentoml.sklearn.save_model('stroke_prediction', model, 
+                           custom_objects={
+                               'dicVectorizer': dv
+                           },
+                           signatures = {"predict_proba": {"batchable": False}}
+                           )
