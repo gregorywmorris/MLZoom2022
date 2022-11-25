@@ -1,13 +1,12 @@
 
-# Multi model traing done in notebook.
-
 from sklearn.model_selection import train_test_split
-from sklearn.linear_model import LogisticRegression
+from sklearn.svm import SVC
 from sklearn.feature_extraction import DictVectorizer
 from imblearn.over_sampling import SMOTE
 import bentoml
 
-df = pd.read_csv('healthcare-dataset-stroke-data.csv') # .csv must be in same directory
+
+df = pd.read_csv('healthcare-dataset-stroke-data.csv') # csv must be in same directory
 
 df_train, df_test = train_test_split(df, test_size=0.2, random_state=1)
 
@@ -42,9 +41,9 @@ x_train, y_train = training_smote(x_train, y_train)
 len(x_train), len(y_train)
 
 # Train model
-log_model = LogisticRegression(max_iter=1000, random_state=1,C=100,penalty='l2',solver='lbfgs')
+model = SVC(probability=True,random_state=10)
 
-log_model.fit(x_train, y_train)
+model.fit(x_train, y_train)
 
 bentoml.sklearn.save_model('stroke_prediction', model, 
                            custom_objects={
