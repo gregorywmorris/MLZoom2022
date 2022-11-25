@@ -1,5 +1,15 @@
 # Stroke Prediction Project
 
+**Files**
+* Repository Description: `README.md` *this file
+* Data Documentaiton: `DATA.md` 
+* Notebook: `notebook.ipynb`
+* Data: `healthcare-dataset-stroke-data.csv`
+* ML script: `service.py`
+  * Note: Model is saved locally via bentoml 
+* Dependency and enviroment management: `bentofile.yaml`
+* `training.py`
+
 ## Problem Statement
 
 ### By the Numbers
@@ -79,14 +89,6 @@ ML is best suited for complex problems that are not answered by simple logic. In
    * Section *Deployment* then subsection *Production App Access*.
    * Or [here](https://github.com/gregorywmorris/MLZoom2022/blob/main/midterm/README.md#production-app-access).
    * Notebook subsection *Production App Access* contains template and example patient for testing the API.
-
-**Files**
-* Notebook: `notebook.ipynb`
-* Data: `healthcare-dataset-stroke-data.csv`
-* ML script: `service.py`
-  * Note: Model is saved locally via bentoml 
-* Dependency and enviroment management: `bentofile.yaml`
-* `training.py`
 
 
 ## Production App Access
