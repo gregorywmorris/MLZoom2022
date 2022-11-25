@@ -88,9 +88,7 @@ N/A
 <!-- info: Select ***all applicable**** subjects contained the dataset: -->
 
 - Sensitive Data About People
-  - Personal Health Information (PHI) that has been anonymized
-- Medical Data
-
+- Personal Health Information (PHI) *anonymized
 
 #### File Snapshot
 <!-- scope: periscope -->
