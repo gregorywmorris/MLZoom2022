@@ -87,7 +87,8 @@ N/A
 <!-- scope: telescope -->
 <!-- info: Select ***all applicable**** subjects contained the dataset: -->
 
-- Non-Sensitive Data About People
+- Sensitive Data About People
+  - Personal Health Information (PHI) that has been anonymized
 - Medical Data
 
 
