@@ -3,12 +3,14 @@
 **Files**
 * Repository Description: `README.md` *this file
 * Data Documentation: `DATA.md` 
+* Conda enviroment: `requirements.txt` - used to create conda envirment with `conda create --name <env> --file requirements.txt`. 
+  * **Note:** this is not the right format for pip. 
 * Notebook: `notebook.ipynb`
 * Data: `healthcare-dataset-stroke-data.csv`
 * ML script: `service.py`
   * Note: Model is saved locally via bentoml 
 * Dependency and enviroment management: `bentofile.yaml`
-* Model Creation Script: `training.py`
+* Standalone Model Creation Script: `training.py`
 
 ## Problem Statement
 
