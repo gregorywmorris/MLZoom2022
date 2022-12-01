@@ -138,7 +138,7 @@ ML is best suited for complex problems that are not answered by simple logic. In
 
 {
 
-"gender": "string",
+"gender": "Male",
 
 "age": 69.0,
 
