@@ -90,7 +90,7 @@ ML is best suited for complex problems that are not answered by simple logic. In
 
 **Instructions**
 
-1.) To access the production site go here: http://54.209.45.24:3000/
+1.) To access the production site go here: http://3.91.93.14:3000/
 
 2.) Select Try it out in the POST section.
 
