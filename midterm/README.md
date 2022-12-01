@@ -8,7 +8,7 @@
 * Notebook: `notebook.ipynb`
 * Data: `healthcare-dataset-stroke-data.csv`
 * ML script: `service.py`
-  * Note: Model is saved locally via bentoml 
+  * **Note:** Model is saved locally via bentoml 
 * Dependency and enviroment management: `bentofile.yaml`
 * Standalone Model Creation Script: `training.py`
 
