@@ -1,0 +1,12 @@
+
+service: "service.py:svc"
+labels:
+  owner: Gregory Morris
+  project: MLZoomcamp capstone-1 project
+include:
+- "*.py"
+python:
+    packages:  # Additional pip packages required by the service
+    - scikit-learn
+    - numpy
+    - bentoml
