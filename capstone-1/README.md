@@ -9,5 +9,5 @@ Files:
 Project Criteria
 
 * **Problem description:** Lending Club is a money loan service that operates online. To reduce risk and maximize profits management would like to reduce the opportunity for human error in identifying and approving loans. 
-      * The first requirement: Do not approve loans that are high risk (less than 50% likelihood of payback).
-      * The second requrement: Approve loans for those that meet the criteria of above 50% threshhold and identify them as either moderate risk (50-80%) or low risk (greater than 80%).
+   * The first requirement: Do not approve loans that are high risk (less than 50% likelihood of payback).
+   * The second requrement: Approve loans for those that meet the criteria of above 50% threshhold and identify them as either moderate risk (50-80%) or low risk (greater than 80%).
