@@ -54,4 +54,4 @@ Files:
    * Select the cluster
    * Select `Tasks` and then `Run new Task`
    * Follow the prompts and select the created task.
-      * Select `Run Task` 
+      * Select `Run Task`
