@@ -4,7 +4,10 @@ Files:
     * Referenced from [here](https://figshare.com/articles/dataset/Lending_club_dataset_description/20016077)
 * Data: `lendingclub-1.csv` and `lendingclub-2.csv` 
     * Referenced in this [article](https://towardsdatascience.com/end-to-end-case-study-classification-lending-club-data-489f8a1b100a) and downloaded from [here](https://drive.google.com/drive/folders/1A74WpM8ayIfvzfrkFRFzFyBh27djL4YE)
+    * Cleanded data: to train model `lc_clean.csv`; to test model `lc_test.csv`
 * Notebook: `LendingClub.ipynb`
+* bentoml: `bentofile.yaml` and `service.py`
+
 
 Project Criteria
 
@@ -14,13 +17,13 @@ Project Criteria
 * **EDA:** see `LendingClub.ipynb`
 * **Model training:** see `LendingClub.ipynb` or `training.py`
 * **Export notebook to script:** see `training.py`
-* **Reproduceability:**
-* **Model Deployment:**
+* **Reproduceability:** see section on Cloud Deployement below
+* **Model Deployment:** see `deployment.pdf`
 * **Dependency and enviroment management:** Anaconda see `requirements.txt`
 * **Containerization:** Containerized via bentoml see `LendingClub.ipynb` or `training.py`
 
 
-### Cloud deployment: 
+### Cloud Deployment: 
 
 **Step 1 Bento ML**
 
