@@ -25,7 +25,7 @@ Project Criteria
 
 ### Cloud Deployment: 
 
-**Step 1 Bento ML**
+**Step 1 Bentoml**
 
 * train and save model with `training.py` or `LendingClub.ipynb`
 * build bento: `bentoml build`
