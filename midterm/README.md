@@ -62,11 +62,12 @@ ML is best suited for complex problems that are not answered by simple logic. In
 ### Environment
 * see `notebook.ipynb` section!PIP
   
-### Containerization: 
-  * In `notebook.ipynb`, see section section *Deployment*, then subsection *BentoML* on build instructions.
-  * To build a bento instance for a live test, the notebook must be run on a local Jupyter instance.
-  * Script creation is done in the notebook with the use of [magic code](https://ipython.readthedocs.io/en/stable/interactive/magics.html) to create files in the notebook directory.
-  * Bentoml commands are listed but not run from the notebook.
+### Containerization with BentoML: 
+
+* Build bento: `bentoml build`
+* Docker container: `bentoml containerize [bento name:code given after 'bentoml build']`
+* Make sure docker service is running if setting up locally. Then run this command line:
+`run docker contianer: docker run -it --rm -p 3000:3000 [bento name:code given after 'bentoml build'] serve --production`
   
 ### Cloud deployment: 
   1. log in to AWS Console 
