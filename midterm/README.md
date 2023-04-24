@@ -85,15 +85,16 @@ ML is best suited for complex problems that are not answered by simple logic. In
   5. Select `Clusters` on the left pane, then Select `create cluster`. 
    * Follow the prompts to create a cluster
    * Select the cluster
-   * Select `Tasks` and then `Run new Task`
+   * Select `Services` and then `Create`
    * Follow the prompts and select the created task.
-      * Select `Run Task`
+      * Set security group to allow public access to port 3000.
+      * Select `Run Service`
 
 ## Production App Access
 
 **Instructions**
 
-1.) To access the production site go here: http://3.91.93.14:3000/
+1.) To access the production site using port 3000.
 
 2.) Select POST then Try it out on the right of the POST section.
 
